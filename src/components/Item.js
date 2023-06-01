@@ -7,7 +7,7 @@ import {
 import Card from "./Card";
 import Checkbox from "./Checkbox";
 
-const Item = ({todo}) => {
+const Item = ({ todo, handeDelete, editTodo }) => {
     //const [title, setTitle] = useState("Title");
     //const [task, setTask] = useState("Task");
     const [ done, setDone ] = useState(todo.done);
@@ -21,8 +21,14 @@ const Item = ({todo}) => {
                 <div className="flex-container">
                     <div className="title">{todo.title}</div>
                     <div className="btns">
-                        <MdEdit style={{ color: "#f7cd62", marginRight: ".5rem" }} />
-                        <MdDeleteForever style={{ color: "#ed844f" }}  />
+                        <MdEdit 
+                            style={{ color: "#f7cd62", marginRight: ".5rem" }} 
+                            onClick={() => handleDelete(todo.id)} 
+                        />
+                        <MdDeleteForever 
+                            style={{ color: "#ed844f" }} 
+                            onClick={() => editTodo(todo)} 
+                        />
                     </div>
                 </div>
                 <div className="task">{todo.task}</div>
