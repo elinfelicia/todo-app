@@ -7,7 +7,7 @@ import {
 import Card from "./Card";
 import Checkbox from "./Checkbox";
 
-const Item = ({ todo, handeDelete, editTodo }) => {
+const Item = ({ todo, handleDelete, editTodo }) => {
     //const [title, setTitle] = useState("Title");
     //const [task, setTask] = useState("Task");
     const [ done, setDone ] = useState(todo.done);
