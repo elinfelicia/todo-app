@@ -10,12 +10,18 @@ const Home =() => {
     const addTodo = (newTodo) => {
         newTodo.id = uuidv4();
         setTodo([newTodo, ...todo]);
-    }
+    };
+
+    const deleteTodo = (id) => {
+        if(window.confirm("Are you sure you want to delete the ToDo?")) {
+            setTodo(todo.filter((item) => item.id !=id));
+        }
+    };
 
     return (
         <div className="container">
             <Form addTodo={addTodo} />
-            <List todo={todo} />
+            <List todo={todo} handleDelete={deleteTodo} />
         </div>
     )
 };
