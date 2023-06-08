@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "username": "hej",
+      "email": "hej@hej.com",
+      "password": "hejhej",
+      "id": 2
+    },
+    {
+      "username": "hejhej",
+      "email": "blabla@bla.com",
+      "password": "blabla",
+      "id": 3
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "title": "Gym",
+      "task": "Go to the gym",
+      "day": "Tuesday",
+      "done": false
+    },
+    {
+      "id": 2,
+      "title": "Laundry",
+      "task": "Do the laundry",
+      "day": "Wednesday",
+      "done": false
+    },
+    {
+      "id": 3,
+      "title": "Nails",
+      "task": "Nail appointment at 15:00",
+      "day": "Thursday",
+      "done": false
+    },
+    {
+      "id": 4,
+      "title": "Present",
+      "task": "Present project at 10:00",
+      "day": "Friday",
+      "done": false
+    }
+  ]
+}
