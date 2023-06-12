@@ -22,7 +22,7 @@ const Register = () => {
             alert("User already exists!")
         } else {
             const user = { username, email, password };
-            axios.post("http://localhost:6001/users", user) .then(alert("User created!"));
+            axios.post("http://localhost:6001/users", user).then(alert("User created!"));
         }
 
     }

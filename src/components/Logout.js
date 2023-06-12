@@ -9,9 +9,9 @@ const Logout = () => {
     };
 
     return (
-        <Button className="btn" onClick={handleLogout}>
+        <button onClick={handleLogout}>
             Log Out
-        </Button>
+        </button>
     );
 };
 

@@ -1,4 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
+import NavButton from "./NavButton";
+import Logout from "./Logout";
 
 const Header = () => {
     const navigate = useNavigate ();
@@ -10,25 +12,25 @@ const Header = () => {
     };
 
     return (
-            <div className="navBar">
+            <div className="navbar">
                 <h1>ToDo App</h1>
                 <nav className="nav">
                     {userLoggedIn ? (
-                        <button type="button" classname="nav-btn" onClick={handleLogout}>
-                            Log Out
-                        </button>
+                        <NavButton type="button" classname="nav-btn" onClick={handleLogout}>
+                             <Logout className="nav-btn"/>
+                        </NavButton>
                     ) : (
                     <>
-                        <button type="button" classname="nav-btn">
-                            <Link to="/login">
+                        <NavButton type="button" classname="nav-btn">
+                            <Link to="/login" className="nav-link">
                                 Log in
                             </Link>
-                        </button>
-                        <button type="button" classname="nav-btn">
-                            <Link to="/register">
+                        </NavButton>
+                        <NavButton type="button" classname="nav-btn">
+                            <Link to="/register" className="nav-link" >
                                 Register
                             </Link>
-                        </button>
+                        </NavButton>
                     </>
                     )}
 
