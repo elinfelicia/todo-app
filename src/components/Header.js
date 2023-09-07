@@ -16,9 +16,9 @@ const Header = () => {
                 <h1>ToDo App</h1>
                 <nav className="nav">
                     {userLoggedIn ? (
-                        <NavButton type="button" classname="nav-btn" onClick={handleLogout}>
-                             <Logout className="nav-btn"/>
-                        </NavButton>
+                        <Logout type="button" classname="nav-btn" onClick={handleLogout}>
+                             {/* <Logout className="nav-btn"/> */}
+                        </Logout>
                     ) : (
                     <>
                         <NavButton type="button" classname="nav-btn">

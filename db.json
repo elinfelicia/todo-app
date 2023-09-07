@@ -17,6 +17,12 @@
       "email": "blabla@bla.com",
       "password": "blabla",
       "id": 3
+    },
+    {
+      "username": "Elin",
+      "email": "elinriihimaki@gmail.com",
+      "password": "hejhej",
+      "id": 4
     }
   ],
   "todos": [
